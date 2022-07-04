@@ -29,7 +29,7 @@ STONE_TO_CHAR = {
 def avg(items):
     if not items:
         return 0.0
-    return sum(items) / float(len(items))
+    return np.mean(items)
 
 
 def print_board(board):
