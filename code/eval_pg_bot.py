@@ -1,7 +1,7 @@
 import argparse
 import datetime
 from collections import namedtuple
-
+import numpy as np
 import h5py
 
 from dlgo import agent
@@ -21,7 +21,7 @@ STONE_TO_CHAR = {
 def avg(items):
     if not items:
         return 0.0
-    return sum(items) / float(len(items))
+    return np.mean(items)
 
 
 def print_board(board):
